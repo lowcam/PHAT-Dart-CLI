@@ -2,7 +2,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # CLI Dart Version
-# v 0.8.0
+# v 1.0.0
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -39,6 +39,7 @@ import 'package:crypto/crypto.dart';
 import 'dart:convert';
 import 'package:convert/convert.dart';
 import 'package:fast_base58/fast_base58.dart';
+
 
 String printLicense() {
 
@@ -211,6 +212,8 @@ String finalOutputText (String convertedText, int outputDigits){
 
 }
 
+
+
 main() {
   printLicense();
   String inpText = inputText();
@@ -221,6 +224,5 @@ main() {
   String numSysConv = numberSystemConvert(numSys,hashText);
   String finalPrint = finalOutputText(numSysConv,outDig);
   print (finalPrint);
-
   
 }
