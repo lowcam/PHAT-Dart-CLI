@@ -2,7 +2,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # CLI Dart Version
-# v 0.6.0
+# v 0.8.0
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -162,19 +162,16 @@ String hashInput(String userText, int userSha){
 	var bytes = utf8.encode(userText);
 	if (userSha == 256){
 		var digest1 = sha256.convert(bytes);
-		print (digest1);
 		String digest1str = digest1.toString();
 		return digest1str;
 	}
 	else if (userSha == 384){
 		var digest2 = sha384.convert(bytes);
-		print (digest2);
 		String digest2str = digest2.toString();
 		return digest2str;
 	}
 	else {
 		var digest3 = sha512.convert(bytes);
-		print (digest3);
 		String digest3str = digest3.toString();
 		return digest3str;
 	}
@@ -183,36 +180,47 @@ String hashInput(String userText, int userSha){
 
 String numberSystemConvert (String userNumSys, String convHashText){
 	List<int> bytes = hex.decode(convHashText);
-	print (bytes);
 	if (userNumSys == 'Hex'){
 		return convHashText;
 	}
 	else if (userNumSys == 'Base64'){
 		String base64text = base64.encode(bytes);
-		print (base64text);
 		return base64text;
 	}
 	else{
 		String base58text = Base58Encode(bytes);
-		print (base58text);
 		return base58text;
 	}
+}
+
+String finalOutputText (String convertedText, int outputDigits){
+
+	if (outputDigits == 0){
+		return convertedText;
+	}
+	else{
+		int stringLength = convertedText.length;
+		if (stringLength <= outputDigits){
+			return convertedText;
+		}
+		else{
+			String newString = convertedText.substring(0,outputDigits);
+			return newString;
+		}
+	}
+
 }
 
 main() {
   printLicense();
   String inpText = inputText();
-  print (inpText);
   int shaNum = shaSize();
-  print (shaNum);
   String numSys = numberSystemSelection();
-  print (numSys);
   int outDig = outputDigits();
-  print (outDig);
-  //hashInput(inpText,shaNum);
   String hashText = hashInput(inpText,shaNum);
-  print (hashText);
   String numSysConv = numberSystemConvert(numSys,hashText);
- // print (numSysConv);
+  String finalPrint = finalOutputText(numSysConv,outDig);
+  print (finalPrint);
+
   
 }
