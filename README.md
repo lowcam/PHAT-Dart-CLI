@@ -1,7 +1,7 @@
 
 PHAT  - Password Hashing Algorithm Tool
 CLI DART Version
-v 0.6.0
+v 0.8.0
 
 The purpose of this tool is to let an individual enter text and have a hashed
 output to use as the password to the site or program. Initially the program
