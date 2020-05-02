@@ -1,5 +1,5 @@
 name: phat_dart_cli
-version: 0.5.0
+version: 0.6.0
 description: >-
   The purpose of this tool is to let an individual enter text and have a hashed
   output to use as the password to the site or program. Initially the program
@@ -14,4 +14,6 @@ environment:
   sdk: '>=2.0.0 <3.0.0'
 dependencies:
   crypto: ^2.1.4
+  convert: ^2.1.1
+  fast_base58: ^0.1.8
 
