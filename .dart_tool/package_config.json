@@ -2,49 +2,43 @@
   "configVersion": 2,
   "packages": [
     {
-      "name": "charcode",
-      "rootUri": "file:///C:/Users/cammlorn/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/charcode-1.1.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "collection",
-      "rootUri": "file:///C:/Users/cammlorn/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/collection-1.14.12",
+      "rootUri": "file:///C:/Users/lowcam/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.18"
     },
     {
       "name": "convert",
-      "rootUri": "file:///C:/Users/cammlorn/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/convert-2.1.1",
+      "rootUri": "file:///C:/Users/lowcam/AppData/Local/Pub/Cache/hosted/pub.dev/convert-3.1.1",
       "packageUri": "lib/",
-      "languageVersion": "1.17"
+      "languageVersion": "2.18"
     },
     {
       "name": "crypto",
-      "rootUri": "file:///C:/Users/cammlorn/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/crypto-2.1.4",
+      "rootUri": "file:///C:/Users/lowcam/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.19"
     },
     {
       "name": "fast_base58",
-      "rootUri": "file:///C:/Users/cammlorn/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/fast_base58-0.1.8",
+      "rootUri": "file:///C:/Users/lowcam/AppData/Local/Pub/Cache/hosted/pub.dev/fast_base58-0.2.1",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///C:/Users/cammlorn/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/typed_data-1.1.6",
+      "rootUri": "file:///C:/Users/lowcam/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.17"
     },
     {
       "name": "phat_dart_cli",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "3.0"
     }
   ],
-  "generated": "2020-05-02T08:20:44.648921Z",
+  "generated": "2023-08-20T00:21:30.744847Z",
   "generator": "pub",
-  "generatorVersion": "2.7.2"
+  "generatorVersion": "3.1.0"
 }
