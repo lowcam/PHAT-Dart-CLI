@@ -2,7 +2,7 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # CLI Dart Version
-# v 1.0.0
+# v 2.0.0
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
@@ -14,9 +14,13 @@
 # in a password. THe last step will be for the output to be copied to the
 # clipboard so if can be pasted into the program or site.
 #
-# 
+# Update 2.0.0 updated DART to > 3.0.0 and updated dependencies 
+# as of August of 2023. Code updated to comply with the updates.
 #
-# (C) 2020 Lorne Cammack, USA
+# *****Make sure to run flutter clean and then flutter pub get
+#      to update the dependencies before trying to run the dart file*****
+#
+# (C) 2023 Lorne Cammack, USA
 # email lowcam.socailvideo@gmail.com
 # Released under GNU Public License (GPL) v3
 #    This program is free software: you can redistribute it and/or modify
@@ -49,13 +53,15 @@ String printLicense() {
 	This is free software, and you are welcome to redistribute it
 	under certain conditions. See https://www.gnu.org/licenses/ for more details.
 	''');
+	String returnText = 'return';
+	return returnText;
 
 }
 
 String inputText() {
 
 	print ('Input Text: ');
-	String inText = stdin.readLineSync();
+	String inText = stdin.readLineSync()!;
 	return inText;
 
 }
@@ -63,69 +69,74 @@ String inputText() {
 int shaSize() {
 
 	print ('How Many Bits in SHA? (A: 256, B: 384 C: 512)');
-	String shaIn = stdin.readLineSync();
+	String shaIn = stdin.readLineSync()!;
 	int counterSha = 0;
+	int returnSha = 0;
 	while (counterSha == 0){
 		if (shaIn == 'A' || shaIn == 'a'){
-			return 256;
+			returnSha = 256;
 			counterSha = 1;
 		}
 		else if (shaIn == 'B' || shaIn == 'b'){
-			return 384;
+			returnSha = 384;
 			counterSha = 1;
 		}
 		else if (shaIn == 'C' || shaIn == 'c'){
-			return 512;
+			returnSha = 512;
 			counterSha = 1;
 		}
 		else {
 			print ('Incorrect value entered. Please try again.');
 			print ('How Many Bits in SHA? (A: 256, B: 384 C: 512)');
-			shaIn = stdin.readLineSync();
+			shaIn = stdin.readLineSync()!;			
 		}
 	}
+	return returnSha;
 }
 
 String numberSystemSelection() {
 
 	print ('What number system would you like the output in? (D: Hex, E: Base64 F: Base58)');
-	String numSysIn = stdin.readLineSync();
+	String numSysIn = stdin.readLineSync()!;
+	String numSysReturn = '';
 	int counterNumSys = 0;
 	while (counterNumSys == 0){
 		if (numSysIn == 'D' || numSysIn == 'd'){
-			return 'Hex';
+			numSysReturn = 'Hex';
 			counterNumSys = 1;
 		}
 		else if (numSysIn == 'E' || numSysIn == 'e'){
-			return 'Base64';
+			numSysReturn = 'Base64';
 			counterNumSys = 1;
 		}
 		else if (numSysIn == 'F' || numSysIn == 'f'){
-			return 'Base58';
+			numSysReturn = 'Base58';
 			counterNumSys = 1;
 		}
 		else {
 			print ('Incorrect value entered. Please try again.');
 			print ('What number system would you like the output in? (D: Hex, E: Base64 F: Base58)');
-			numSysIn = stdin.readLineSync();
+			numSysIn = stdin.readLineSync()!;
 		}
 	}
-
+	
+	return numSysReturn;
 }
 
 int outputDigits(){
 
 	print ('Would you like to restrict the number of output digits? (Y: Yes, N: No)');
-		String outDigIn = stdin.readLineSync();
+		String outDigIn = stdin.readLineSync()!;
 		int counterOutDig1 = 0;
+		int returnDig1 = 0;
 		while (counterOutDig1 == 0){
 			if (outDigIn == 'N' || outDigIn == 'n'){
-				return 0;
+				returnDig1 = 0;
 				counterOutDig1 = 1;
 			}
 			else if (outDigIn == 'Y' || outDigIn == 'y'){
 				print ('How many digits would you like? (1-128) ');
-				String restOutDig = stdin.readLineSync();
+				String restOutDig = stdin.readLineSync()!;
 				int counterOutDig2 = 0;
 					while (counterOutDig2 == 0) {
 						try {
@@ -133,17 +144,17 @@ int outputDigits(){
 							if (restOutDigInt < 1 || restOutDigInt > 128){
 								print('Incorrect value entered. Please try again.');
 								print ('How many digits would you like? (1-128) ');
-								restOutDig = stdin.readLineSync();
+								restOutDig = stdin.readLineSync()!;
 							}
 							else {
-								return restOutDigInt;
+								returnDig1 = restOutDigInt;
 								counterOutDig2 = 1;
 							}
 							
 						} on FormatException {
 							print('Incorrect value entered. Please try again.');
 							print ('How many digits would you like? (1-128) ');
-							restOutDig = stdin.readLineSync();
+							restOutDig = stdin.readLineSync()!;
 						}
 						
 					
@@ -153,9 +164,10 @@ int outputDigits(){
 			else {
 				print ('Incorrect value entered. Please try again.');
 				print ('Would you like to restrict the number of output digits? (Y: Yes, N: No)');
-				outDigIn = stdin.readLineSync();
+				outDigIn = stdin.readLineSync()!;
 			}
 		}
+		return returnDig1;
 
 }
 
