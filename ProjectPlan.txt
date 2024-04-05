@@ -1,0 +1,10 @@
+This is the project plan for the Password Hash Calc in Dart CLI.
+- See about upgrading SHA calculations to SHA3.
+-- Need to research if SHA3 has beem implemented in Dart, within the crypto library or a different one.. 
+-- https://www.dartwiki.com/wiki/SHA-3
+--- This link uses the crypto library, so may be possible even though the crypto library doesn't show it on it's page
+-- https://www.dartwiki.com/wiki/SHA-3_(Secure_Hash_Algorithm_3)
+--- Another option using a sha3 library
+-- Probably need to think about having it as an option, do you want to use
+-- sha2 or sha3? That way if any pw are using sha2 can still get those hashes to match.
+-- sha3 will produce a totally different hash from sha2.

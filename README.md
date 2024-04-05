@@ -16,7 +16,7 @@ copy text to clipboard from the CLI.
 Update 2.0.0 updated DART to > 3.0.0 and updated dependencies 
 as of August of 2023. Code updated to comply with the updates.
 
-(C) 2023 Lorne Cammack, USA
+(C) 2024 Lorne Cammack, USA
 Released under GNU Public License (GPL)
 email lowcam.socailvideo@gmail.com
 

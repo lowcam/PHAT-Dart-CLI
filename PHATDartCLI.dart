@@ -20,7 +20,7 @@
 # *****Make sure to run flutter clean and then flutter pub get
 #      to update the dependencies before trying to run the dart file*****
 #
-# (C) 2023 Lorne Cammack, USA
+# (C) 2024 Lorne Cammack, USA
 # email lowcam.socailvideo@gmail.com
 # Released under GNU Public License (GPL) v3
 #    This program is free software: you can redistribute it and/or modify
@@ -48,7 +48,7 @@ import 'package:fast_base58/fast_base58.dart';
 String printLicense() {
 
 	print ('''
-	PHAT Copyright (C) 2020 Lorne Cammack
+	PHAT Copyright (C) 2024 Lorne Cammack
 	This program comes with ABSOLUTELY NO WARRANTY;
 	This is free software, and you are welcome to redistribute it
 	under certain conditions. See https://www.gnu.org/licenses/ for more details.
