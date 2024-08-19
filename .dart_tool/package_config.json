@@ -3,9 +3,9 @@
   "packages": [
     {
       "name": "collection",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/collection-1.19.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "convert",
@@ -15,9 +15,9 @@
     },
     {
       "name": "crypto",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/crypto-3.0.3",
+      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/crypto-3.0.5",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.4"
     },
     {
       "name": "fast_base58",
@@ -38,7 +38,10 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-04-04T20:01:10.283565Z",
+  "generated": "2024-08-19T19:45:46.717271Z",
   "generator": "pub",
-  "generatorVersion": "3.3.3"
+  "generatorVersion": "3.5.0",
+  "flutterRoot": "file:///home/cammvm/development/flutter",
+  "flutterVersion": "3.24.0",
+  "pubCache": "file:///home/cammvm/.pub-cache"
 }
