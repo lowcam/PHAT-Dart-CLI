@@ -2,20 +2,20 @@
 #-------------------------------------------------------------------------------
 # PHAT  - Password Hashing Algorithm Tool
 # CLI Dart Version
-# v 2.0.0
+# v 2.0.1
 #
 # The purpose of this tool is to let an individual enter text and have a hashed
 # output to use as the password to the site or program. Initially the program
-# will hash the input in SHA 256 and output in hexadecimal. THe plans for this
+# will hash the input in SHA 256 and output in hexadecimal. The plans for this
 # program are to allow the selection of three different SHA lengths (256, 384,
 # and 512). Also, the output numbering system will be selectable between
 # hexadecimal, base64, and base58. Also, the number of digits in the ouput
 # will be selectable in case a site can only have a certain number of digits
-# in a password. THe last step will be for the output to be copied to the
+# in a password. The last step will be for the output to be copied to the
 # clipboard so if can be pasted into the program or site.
 #
-# Update 2.0.0 updated DART to > 3.0.0 and updated dependencies 
-# as of August of 2023. Code updated to comply with the updates.
+# Update 2.0.1 updated DART to >= 3.5.3 and updated dependencies 
+# as of October of 2024. Code updated to comply with the updates.
 #
 # *****Make sure to run flutter clean and then flutter pub get
 #      to update the dependencies before trying to run the dart file*****

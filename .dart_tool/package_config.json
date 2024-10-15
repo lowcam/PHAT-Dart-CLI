@@ -38,10 +38,10 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-08-19T19:45:46.717271Z",
+  "generated": "2024-10-15T18:59:47.677221Z",
   "generator": "pub",
-  "generatorVersion": "3.5.0",
+  "generatorVersion": "3.5.3",
   "flutterRoot": "file:///home/cammvm/development/flutter",
-  "flutterVersion": "3.24.0",
+  "flutterVersion": "3.24.3",
   "pubCache": "file:///home/cammvm/.pub-cache"
 }
