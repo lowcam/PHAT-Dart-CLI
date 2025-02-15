@@ -3,31 +3,31 @@
   "packages": [
     {
       "name": "collection",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/collection-1.19.1",
+      "rootUri": "file:///C:/Users/aouser/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
       "name": "convert",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/convert-3.1.2",
+      "rootUri": "file:///C:/Users/aouser/AppData/Local/Pub/Cache/hosted/pub.dev/convert-3.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
       "name": "crypto",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/crypto-3.0.6",
+      "rootUri": "file:///C:/Users/aouser/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.6",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
       "name": "fast_base58",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/fast_base58-0.2.1",
+      "rootUri": "file:///C:/Users/aouser/AppData/Local/Pub/Cache/hosted/pub.dev/fast_base58-0.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///home/cammvm/.pub-cache/hosted/pub.dev/typed_data-1.4.0",
+      "rootUri": "file:///C:/Users/aouser/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -38,10 +38,10 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-11-19T02:58:04.130773Z",
+  "generated": "2024-12-28T15:50:50.595273Z",
   "generator": "pub",
-  "generatorVersion": "3.5.4",
-  "flutterRoot": "file:///home/cammvm/development/flutter",
-  "flutterVersion": "3.24.5",
-  "pubCache": "file:///home/cammvm/.pub-cache"
+  "generatorVersion": "3.6.0",
+  "flutterRoot": "file:///C:/tools/flutter",
+  "flutterVersion": "3.27.1",
+  "pubCache": "file:///C:/Users/aouser/AppData/Local/Pub/Cache"
 }
